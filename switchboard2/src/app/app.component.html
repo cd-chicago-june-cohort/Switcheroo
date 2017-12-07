@@ -1,0 +1,6 @@
+<div class="center">
+  <h1>Switcheroo</h1>
+  <div class="buttonBox" *ngFor="let one of buttons; let i = index">
+    <button (click)="switch(i)" [ngClass]='{switchOn: (setting[i])}'>{{buttons[i]}}</button>
+  </div>
+</div>
